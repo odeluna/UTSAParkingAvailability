@@ -1,12 +1,36 @@
 body {
   background-color: lightgray;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
 }
+
+
 h1 {
   color: maroon;
 }
+
+
 p {
   color: red;
 }
+
+#predictButton{
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    
+}
+
+
+#predictButton:hover{
+    background-color: #cc6900;
+    
+}
+
 
 #progressContainer{
     width: 100%;
@@ -15,6 +39,7 @@ p {
     border-radius: 10px;
     margin-top: 10px;
 }
+
 
 #progressBar{
     height: 100%;
