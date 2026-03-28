@@ -10,39 +10,84 @@
 <p></p>
 
 
-<label for="parking">Where would you like to park?</label>
-<select name="parking" id="parking">
+<label for="lotDropdown">Where would you like to park?</label>
+<select id="lotDropdown">
     <option value="" disabled selected hidden>-- Select an option --</option>
   <optgroup label="Garages">
-    <option value=BRG>Baurele Road Garage</option>
-    <option value=TAG>Tobin Avenue Road Garage</option>
-    <option value=XAG>Ximenes Avenue Road Garage</option>
+    <option value=G>Baurele Road Garage</option>
+    <option value=G>Tobin Avenue Road Garage</option>
+    <option value=G>Ximenes Avenue Road Garage</option>
   </optgroup>
   
   <optgroup label="Resident Lots">
-    <option value=R1>Resident Lot 1</option>
-    <option value=R2>Resident Lot 2</option>
-    <option value=R4>Resident Lot 4</option>
-    <option value=R5>Resident Lot 5</option>
+    <option value=R>Resident Lot 1</option>
+    <option value=R>Resident Lot 2</option>
+    <option value=R>Resident Lot 4</option>
+    <option value=R>Resident Lot 5</option>
   </optgroup>
   
   <optgroup label="Commuter Lots">
-    <option value=BK1>Brackenridge Lot 1</option>
-    <option value=BK2>Brackenridge Lot 2</option>
-    <option value=BK3>Brackenridge Lot 3</option>
-    <option value=BK4>Brackenridge Lot 4</option>
-    <option value=BK5>Brackenridge Lot 5</option>
+    <option value=LOT>Brackenridge Lot 1</option>
+    <option value=LOT>Brackenridge Lot 2</option>
+    <option value=LOT>Brackenridge Lot 3</option>
+    <option value=LOT>Brackenridge Lot 4</option>
+    <option value=LOT>Brackenridge Lot 5</option>
     
-    <option value=BR1>Baurele Lot 1</option>
-    <option value=BR1>Baurele Lot 2</option>
-    <option value=BR1>Baurele Lot 3</option>
+    <option value=LOT>Baurele Lot 1</option>
+    <option value=LOT>Baurele Lot 2</option>
+    <option value=LOT>Baurele Lot 3</option>
     
-    <option value=BS>Barshop Boulevard Lot</option>
+    <option value=LOT>Barshop Boulevard Lot</option>
     
-    <option value=XL>Ximenes Avenue Lot</option>
+    <option value=LOT>Ximenes Avenue Lot</option>
     
   </optgroup>
 </select>
+
+<p></p>
+
+<label for= "timeDropdown">What time will you be parking?</label>
+<select id="timeDropdown">
+    
+    <option value="" disabled selected hidden>-- Select an option --</option>
+    <option value=12am>12 am</option>
+    <option value=1am>1 am</option>
+    <option value=2am>2 am</option>
+    <option value=3am>3 am</option>
+    <option value=4am>4 am</option>
+    <option value=5am>5 am</option>
+    <option value=6am>6 am</option>
+    <option value=7am>7 am</option>
+    <option value=8am>8 am</option>
+    <option value=9am>9 am</option>
+    <option value=10am>10 am</option>
+    <option value=11am>11 am</option>
+    <option value=12pm>12 pm</option>
+    <option value=1pm>1 pm</option>
+    <option value=2pm>2 pm</option>
+    <option value=3pm>3 pm</option>
+    <option value=4pm>4 pm</option>
+    <option value=5pm>5 pm</option>
+    <option value=6pm>6 pm</option>
+    <option value=7pm>7 pm</option>
+    <option value=8pm>8 pm</option>
+    <option value=9pm>9 pm</option>
+    <option value=10pm>10 pm</option>
+    <option value=11pm>11 pm</option>
+    
+  
+  
+</select>
+
+<p></p>
+
+<button id="predictButton">Predict Parking Availability</button>
+
+
+
+<div id="progressContainer">
+    <div id="progressBar"></div>
+</div>
 
 </body>
 </html>
